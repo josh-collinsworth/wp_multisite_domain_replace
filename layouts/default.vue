@@ -23,8 +23,8 @@ export default {
 
 <style>
 html {
-  font-family: 'AmsiPro-Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'AmsiProNormal-Regular', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 18px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -60,13 +60,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'AmsiPro-Ultra';
+  font-family: 'AmsiProNormal-Ultra';
+  font-weight: normal;
   margin: 1em 0;
 }
 
 b,
 strong {
-  font-family: 'AmsiPro-Ultra';
+  font-family: 'AmsiProNormal-Ultra';
+  font-weight: normal;
 }
 
 p {
@@ -79,7 +81,8 @@ ul {
 }
 
 a {
-  font-family: 'AmsiPro-Ultra';
+  font-family: 'AmsiProNormal-Ultra';
+  font-weight: normal;
   text-decoration-color: #ffd100;
 }
 

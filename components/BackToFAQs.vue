@@ -15,6 +15,5 @@ export default {
 <style scoped>
 p {
   margin: 2em 0;
-  font-weight: bold;
 }
 </style>

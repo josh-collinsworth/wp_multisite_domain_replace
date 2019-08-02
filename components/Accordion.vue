@@ -110,8 +110,8 @@ button {
   padding: 0.5em;
   border-radius: 4px;
   border: none;
-  font-weight: bold;
-  font-family: 'AmsiPro-Ultra';
+  font-weight: normal;
+  font-family: 'AmsiProNormal-Ultra';
   font-size: 0.8rem;
   margin: 1em 0;
 }

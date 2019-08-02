@@ -36,7 +36,6 @@ header {
 }
 
 header p {
-  font-weight: bold;
   margin: 0;
   font-size: 1.2rem;
 }
@@ -54,6 +53,5 @@ ul {
 
 li {
   margin-left: 1em;
-  font-weight: bold;
 }
 </style>

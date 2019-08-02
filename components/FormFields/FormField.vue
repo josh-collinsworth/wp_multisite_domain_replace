@@ -95,9 +95,8 @@ label {
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
-  font-weight: bold;
   margin: 1em 0 0.3em;
-  font-family: 'AmsiPro-Ultra';
+  font-family: 'AmsiProNormal-Ultra';
 }
 input[type='text'],
 input[type='number'] {
