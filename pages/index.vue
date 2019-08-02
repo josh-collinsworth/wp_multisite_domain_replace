@@ -1,7 +1,14 @@
 <template>
   <transition name="fade-up" appear>
     <form @submit="submit">
-      <H1>Update a WordPress Multisite’s Domain with a Single SQL Command</H1>
+      <H1
+        >Update a WordPress Multisite Network Domain with a Single
+        SQL&nbsp;Command
+      </H1>
+
+      <p class="note"><nuxt-link to="/about">What is this?</nuxt-link></p>
+
+      <br />
 
       <OldDomain
         :submitted="submitted"
@@ -358,9 +365,10 @@ textarea#secretTextCopySource {
   font-weight: normal;
 }
 
-.note {
+.note,
+.note a {
   margin: 3em 0;
-  font-family: 'Sagona-BookItalic', serif;
+  font-family: 'Sagona-BookItalic', serif !important;
 }
 
 i {

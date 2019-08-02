@@ -14,6 +14,9 @@
       <a href="https://nuxtjs.org/" target="_blank">NuxtJS</a>, and is hosted on
       <a href="https://zeit.co/now" target="_blank">Zeit Now</a>.
     </p>
+    <p>
+      <nuxt-link to="/">⬅️ Back to home</nuxt-link>
+    </p>
   </div>
 </template>
 

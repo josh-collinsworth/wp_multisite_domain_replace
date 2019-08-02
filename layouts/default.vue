@@ -51,7 +51,8 @@ body {
 }
 
 h1 {
-  font-size: 2.6em;
+  font-size: calc(1em + 2vw);
+  line-height: 1.2;
 }
 
 h1,
