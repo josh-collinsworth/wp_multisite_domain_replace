@@ -1,12 +1,17 @@
 <template>
   <footer>
     <div class="container">
-      Built with
-      <a href="https://nuxtjs.org/" target="_blank">NuxtJS</a>
-      by
-      <a href="https://joshcollinsworth.com/" target="_blank"
-        >Josh Collinsworth</a
-      >
+      <p>
+        <small>
+          Built with
+          <a href="https://nuxtjs.org/" target="_blank">NuxtJS</a>
+          by
+          <a href="https://joshcollinsworth.com/" target="_blank"
+            >Josh Collinsworth</a
+          >, a Happiness Engineer at
+          <a href="https://getflywheel.com/" target="_blank">Flywheel</a>
+        </small>
+      </p>
     </div>
   </footer>
 </template>

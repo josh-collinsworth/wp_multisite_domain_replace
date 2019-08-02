@@ -1,5 +1,9 @@
 <template>
-  <p><nuxt-link to="/faq">Back to FAQs</nuxt-link></p>
+  <p>
+    <nuxt-link to="/faq">Back to FAQs</nuxt-link>
+    |
+    <nuxt-link to="/">Home</nuxt-link>
+  </p>
 </template>
 
 <script>
