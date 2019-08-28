@@ -241,7 +241,7 @@ WHERE option_value LIKE '%${this.oldDomain}%' AND option_name = 'home';`
       document.execCommand('copy')
       setTimeout(() => {
         alert(
-          `Command copied! \n\nWARNING: THERE IS NO UNDOING AN SQL COMMAND! Make sure you get a backup of your database before running this command.`
+          `WARNING: THERE IS NO UNDOING AN SQL COMMAND! Make sure you get a backup of your database before running this command.\n\nSQL copied to clipboard!`
         )
       }, 20)
     }
