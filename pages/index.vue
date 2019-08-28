@@ -160,14 +160,10 @@ UPDATE ${this.dbPrefix}blogs
 SET domain = REPLACE(domain, '${this.oldDomain}', '${this.newDomain}')
 WHERE domain LIKE '%${this.oldDomain}%';
 UPDATE ${this.dbPrefix}options
-SET option_value = REPLACE(option_value, '${this.oldDomain}', '${
-        this.newDomain
-      }')
+SET option_value = REPLACE(option_value, '${this.oldDomain}', '${this.newDomain}')
 WHERE option_value LIKE '%${this.oldDomain}%' AND option_name = 'siteurl';
 UPDATE ${this.dbPrefix}options
-SET option_value = REPLACE(option_value, '${this.oldDomain}', '${
-        this.newDomain
-      }')
+SET option_value = REPLACE(option_value, '${this.oldDomain}', '${this.newDomain}')
 WHERE option_value LIKE '%${this.oldDomain}%' AND option_name = 'home';
 UPDATE ${this.dbPrefix}site
 SET domain = REPLACE(domain, '${this.oldDomain}', '${this.newDomain}')
@@ -180,14 +176,10 @@ WHERE meta_value LIKE '%${this.oldDomain}%';`
         compiledSQL += `
 
 UPDATE ${this.dbPrefix}${i}_options
-SET option_value = REPLACE(option_value, '${this.oldDomain}', '${
-          this.newDomain
-        }')
+SET option_value = REPLACE(option_value, '${this.oldDomain}', '${this.newDomain}')
 WHERE option_value LIKE '%${this.oldDomain}%' AND option_name = 'siteurl'; 
 UPDATE ${this.dbPrefix}${i}_options
-SET option_value = REPLACE(option_value, '${this.oldDomain}', '${
-          this.newDomain
-        }')
+SET option_value = REPLACE(option_value, '${this.oldDomain}', '${this.newDomain}')
 WHERE option_value LIKE '%${this.oldDomain}%' AND option_name = 'home';`
       }
       return compiledSQL
