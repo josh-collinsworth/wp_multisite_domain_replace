@@ -290,13 +290,13 @@ input:disabled {
 
 .fade-up-enter-active,
 .fade-up-leave-active {
-  transition: all 0.2s ease;
+  transition: all 0.4s cubic-bezier(0, 0.38, 0.32, 1);
   transform: translateY(0em);
 }
 
 .fade-up-enter,
 .fade-up-leave-to {
-  transform: translateY(1em);
+  transform: translateY(2em);
   opacity: 0;
   position: absolute;
 }

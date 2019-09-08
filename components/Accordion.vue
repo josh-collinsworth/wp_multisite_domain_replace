@@ -53,7 +53,7 @@ export default {
   mounted() {
     this.height = getComputedStyle(this.$refs.drawer).height
     this.expanded = false
-    this.transition = 'height 0.3s ease-in-out'
+    this.transition = 'height 0.4s ease-in-out'
     setTimeout(() => {
       this.$nextTick(() => {
         this.loaded = 1
@@ -83,7 +83,7 @@ h2 a {
 }
 
 .faq-question a span[role='img'] {
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   display: inline-block;
 }
 
@@ -93,7 +93,7 @@ h2 a {
 
 .accordion-enter-active,
 .accordion-leave-active {
-  transition: all 0.3s ease;
+  transition: all 0.4s ease-out;
 }
 
 .accordion-enter,

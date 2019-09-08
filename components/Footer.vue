@@ -8,7 +8,7 @@
           by
           <a href="https://joshcollinsworth.com/" target="_blank"
             >Josh Collinsworth</a
-          >, a Happiness Engineer at
+          >, a developer at
           <a href="https://getflywheel.com/" target="_blank">Flywheel</a>
         </small>
       </p>

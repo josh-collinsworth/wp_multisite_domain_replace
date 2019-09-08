@@ -4,10 +4,12 @@
     <p>
       This site is a tool to help update your multisite's primary domain during
       domain changes (such as transfer to a staging or local environment, or
-      when updating the primary domain of the multisite). Ordinarily, such
-      changes require either a tedious manual update, or a specialized
-      service/plugin. WPMultisiteDomainReplace.com just gives you the requisite
-      SQL to run.
+      when updating the primary domain of the multisite).
+    </p>
+    <p>
+      Ordinarily, such changes require either a tedious manual update, or a
+      specialized service/plugin; this tool just gives you the requisite SQL to
+      run in your database manager.
     </p>
     <p>
       This current version of the site is built with
