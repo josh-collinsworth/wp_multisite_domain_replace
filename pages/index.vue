@@ -2,7 +2,7 @@
   <transition name="fade-up" appear>
     <form @submit="submit">
       <H1
-        >Update a WordPress Multisite Network Domain with a Single
+        >Update a WordPress Multisite Network's Domain with a Single
         SQL&nbsp;Command
       </H1>
 
@@ -18,7 +18,7 @@
         emitted="oldDomainIsValid"
         @oldDomainIsValid="oldDomainCheck"
       >
-        Old domain (change FROM):
+        Change my site's domain FROM this:
       </OldDomain>
 
       <NewDomain
@@ -29,7 +29,7 @@
         emitted="newDomainIsValid"
         @newDomainIsValid="newDomainCheck"
       >
-        New domain (change TO):
+        TO this:
       </NewDomain>
 
       <DBPrefix
