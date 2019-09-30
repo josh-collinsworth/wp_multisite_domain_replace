@@ -14,7 +14,7 @@
         :submitted="submitted"
         name="oldDomain"
         placeholder="www.olddomain.com"
-        error-message="Please provide a valid domain WITHOUT protocol (no “http://” or “/”)"
+        error-message="Invalid format; make sure the domain is valid, does not contain “http://” or a slash, and that the domains do not match."
         emitted="oldDomainIsValid"
         @oldDomainIsValid="oldDomainCheck"
       >
@@ -25,7 +25,7 @@
         :submitted="submitted"
         name="newDomain"
         placeholder="www.newdomain.com"
-        error-message="Please provide a valid domain WITHOUT protocol (no “http://” or “/”)"
+        error-message="Invalid format; make sure the domain is valid, does not contain “http://” or a slash, and that the domains do not match."
         emitted="newDomainIsValid"
         @newDomainIsValid="newDomainCheck"
       >
@@ -150,6 +150,7 @@ export default {
       return (
         this.validOldDomain &&
         this.validNewDomain &&
+        this.oldDomain !== this.newDomain &&
         this.validDBPrefix &&
         this.validMaxID
       )
