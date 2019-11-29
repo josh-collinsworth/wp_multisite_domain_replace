@@ -1,7 +1,7 @@
 {
-  "name": "WordPress Multisite Domain Replace",
+  "name": "wordpress-multisite-domain-replace",
   "version": "1.0.0",
-  "description": "Update a WordPress multisite's domain with a single SQL command. Powered by NuxtJS.",
+  "description": "Generate a single SQL command to update a WordPress multisite network's domains. Powered by NuxtJS.",
   "author": "Josh Collinsworth",
   "private": true,
   "scripts": {
