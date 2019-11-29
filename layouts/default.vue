@@ -43,15 +43,26 @@ html {
 }
 
 *:focus {
-  outline-color: #ffd100;
+  outline: 2px dotted #ff6a13;
+  outline-offset: 3px;
 }
 
 body {
   min-height: 100vh;
 }
 
+header li {
+  display: flex;
+  align-items: center;
+}
+
+header a,
+header p {
+  line-height: 1.2;
+}
+
 h1 {
-  font-size: calc(1em + 2vw);
+  font-size: calc(1.5em + 1vw);
   line-height: 1.2;
 }
 

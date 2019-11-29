@@ -14,7 +14,7 @@
         :submitted="submitted"
         name="oldDomain"
         placeholder="www.olddomain.com"
-        error-message="Invalid format; make sure the domain is valid, does not contain “http://” or a slash, and that the domains do not match."
+        error-message="Invalid formatting. Be sure the domain's valid; doesn't contain “http://” or a slash; and that the to/from domains don't match."
         emitted="oldDomainIsValid"
         @oldDomainIsValid="oldDomainCheck"
       >
@@ -25,7 +25,7 @@
         :submitted="submitted"
         name="newDomain"
         placeholder="www.newdomain.com"
-        error-message="Invalid format; make sure the domain is valid, does not contain “http://” or a slash, and that the domains do not match."
+        error-message="Invalid formatting. Be sure the domain's valid; doesn't contain “http://” or a slash; and that the to/from domains don't match."
         emitted="newDomainIsValid"
         @newDomainIsValid="newDomainCheck"
       >
@@ -76,14 +76,16 @@
           </div>
           <div class="options-wrap">
             <input id="blogID1" v-model="advanced.blogID1" type="checkbox" />
-            <label for="blogID1">Output SQL for blog ID #1 <i>(rare)</i></label>
+            <label for="blogID1"
+              >Include SQL for blog ID #1 <i>(rare)</i></label
+            >
           </div>
         </div>
       </transition>
 
       <div id="button-bar">
         <button @click.prevent="showAdvanced = !showAdvanced">
-          Advanced Options
+          Show Advanced Options
         </button>
 
         <input
@@ -214,7 +216,7 @@ WHERE option_value LIKE '%${this.oldDomain}%' AND option_name = 'home';`
       this.dbPrefix = emitted.data
     },
     maxIDCheck(emitted) {
-      this.validMaxID = emitted.valid
+      this.validMaxID = this.advanced.blogID1 ? true : emitted.valid
       this.maxID = emitted.data
     },
     submit(e) {
@@ -324,7 +326,7 @@ input:disabled {
   padding: 1rem;
   justify-content: flex-start;
   border-radius: 4px;
-  margin-bottom: 2em;
+  margin: 2em 0;
 }
 
 #advanced label {
@@ -350,6 +352,11 @@ input:disabled {
   content: '✅';
 }
 
+.options-wrap input[type='checkbox']:focus + label {
+  outline: 2px dotted #ff6a13;
+  outline-offset: 3px;
+}
+
 textarea#secretTextCopySource {
   opacity: 0;
   position: absolute;
@@ -370,6 +377,10 @@ textarea#secretTextCopySource {
 .note a {
   margin: 3em 0;
   font-family: 'Sagona-BookItalic', serif !important;
+}
+
+.heading-wrap + .note {
+  margin: -1em 0 1em;
 }
 
 i {

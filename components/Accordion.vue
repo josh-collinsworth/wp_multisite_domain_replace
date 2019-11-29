@@ -115,4 +115,8 @@ button {
   font-size: 0.8rem;
   margin: 1em 0;
 }
+
+.faq-close {
+  margin-bottom: 4em;
+}
 </style>

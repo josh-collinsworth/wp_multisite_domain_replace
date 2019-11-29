@@ -7,6 +7,7 @@
       :class="!valid && modified ? 'form-up' : ''"
       :placeholder="placeholder"
       :type="type"
+      :min="type == 'number' ? 2 : null"
       @blur="setModified"
     />
     <p>
@@ -15,7 +16,6 @@
           {{ errorMessage }}
         </b>
       </transition>
-      &nbsp;
     </p>
   </div>
 </template>
@@ -95,7 +95,7 @@ label {
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
-  margin: 1em 0 0.3em;
+  margin: 1.5em 0 0.3em;
   font-family: 'AmsiProNormal-Ultra';
 }
 input[type='text'],
@@ -109,11 +109,11 @@ input[type='number'] {
   border-color: red;
 }
 p {
-  margin: 0.2em 0;
+  margin: 0.4em 0;
   font-size: 0.9em;
 }
 .error {
-  line-height: 1;
+  line-height: 1.2;
   color: red;
   display: inline-block;
 }

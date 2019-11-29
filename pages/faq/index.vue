@@ -120,6 +120,7 @@
     <Accordion
       question="Ok, I've copied the SQL command. Now where do I run it?"
     >
+      <p>First things first: <strong>be sure you have a backup!</strong></p>
       <p>
         You’ll need to access your site’s database manager. This might be
         phpMyAdmin, or your host may have a different database manager.
@@ -289,8 +290,8 @@
     >
       <p>
         <strong
-          >There’s <em>always </em>risk in running SQL commands, so please do so
-          with extreme caution.</strong
+          >There’s ALWAYS risk in running SQL commands, so please do so with
+          extreme caution.</strong
         >
         It is possible that running a bad SQL command could break your site
         entirely and/or make it inaccessible, although this tool is designed to
