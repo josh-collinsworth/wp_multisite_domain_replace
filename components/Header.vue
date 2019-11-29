@@ -32,7 +32,7 @@ header {
   background: #f8fafc;
   display: flex;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 header p {

@@ -85,7 +85,7 @@
 
       <div id="button-bar">
         <button @click.prevent="showAdvanced = !showAdvanced">
-          Show Advanced Options
+          {{ showAdvanced ? 'Hide' : 'Show' }} Advanced Options
         </button>
 
         <input
