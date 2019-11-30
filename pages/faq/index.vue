@@ -153,11 +153,11 @@
       <p>
         With most search-and-replace commands, you’d probably want to include
         the protocol; that helps insure the command doesn’t replace things it
-        shouldn’t. But he SQL command you’ll get from this tool is specifically
+        shouldn’t. But the SQL command you’ll get from this tool is specifically
         written to
         <em>only </em>target the specific places where your multisite’s domain
-        is found in the database, so there’s no worry of the command replacing
-        things it shouldn’t.
+        is found in the database, so there’s absolute minimal worry of the
+        command replacing things it shouldn’t.
       </p>
       <p>
         Some of those places do include the “http://” portion of the domain, but
@@ -202,9 +202,9 @@
       </p>
       <p>
         It’s also worth double-checking that the proper database prefix was
-        entered, that the blog_id number entered was high enough, and that the
-        correct domain was entered for the search, with no “http://” or “/”
-        before or after it.
+        entered, that the <code>blog_id</code> number entered was high enough,
+        and that the correct domain was entered for the search, with no
+        “http://” or “/” before or after it.
       </p>
     </Accordion>
 
@@ -213,7 +213,7 @@
     >
       <p>
         <strong>No. </strong>This tool is specifically designed for updating
-        your WordPress multisite network’s domain only. That’s all it’s designed
+        your WordPress multisite network’s domain only. That’s all it’s meant
         for.
       </p>
       <p>

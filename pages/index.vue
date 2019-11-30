@@ -90,16 +90,16 @@
 
         <input
           id="generate"
-          :disabled="!goodToGo"
+          :disabled="!goodToGo || awaitingResult"
           type="submit"
-          value="Generate SQL"
+          :value="awaitingResult ? 'Generating…' : 'Generate SQL'"
         />
       </div>
 
       <transition name="fade-up">
         <div v-if="submitted" key="a">
           <pre><button @click="copySQL">Select All and Copy</button>
-          <span id="theCommand">{{ spitOutTheSQL }}</span>
+          <span id="theCommand" ref="theCommand">{{ spitOutTheSQL }}</span>
           </pre>
         </div>
         <div v-else key="b">
@@ -144,7 +144,8 @@ export default {
         allowNoUnderscore: false,
         blogID1: false
       },
-      submitted: false
+      submitted: false,
+      awaitingResult: false
     }
   },
   computed: {
@@ -222,11 +223,15 @@ WHERE option_value LIKE '%${this.oldDomain}%' AND option_name = 'home';`
     submit(e) {
       e.preventDefault()
       if (this.goodToGo) {
-        this.submitted = true
+        this.awaitingResult = true
+        setTimeout(() => {
+          this.submitted = true
+          this.awaitingResult = false
+        }, 50)
       }
     },
     copySQL() {
-      const node = document.getElementById('theCommand')
+      const node = this.$refs.theCommand
 
       if (document.body.createTextRange) {
         const range = document.body.createTextRange()

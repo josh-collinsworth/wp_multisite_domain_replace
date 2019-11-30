@@ -26,6 +26,9 @@
           <button class="faq-close" @click.prevent="toggleAccordion">
             Close 🔼
           </button>
+          <nuxt-link class="info" to="/"
+            ><i>Ok, let's do it (back home)</i></nuxt-link
+          >
         </div>
       </transition>
     </div>
@@ -118,5 +121,9 @@ button {
 
 .faq-close {
   margin-bottom: 4em;
+}
+
+.info {
+  margin-left: 1em;
 }
 </style>
