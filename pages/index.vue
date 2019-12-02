@@ -376,12 +376,14 @@ textarea#secretTextCopySource {
   float: right;
   font-size: 0.7em;
   font-weight: normal;
+  font-style: normal;
 }
 
 .note,
 .note a {
   margin: 3em 0;
   font-family: 'Sagona-BookItalic', serif !important;
+  font-style: normal;
 }
 
 .heading-wrap + .note {
@@ -390,6 +392,7 @@ textarea#secretTextCopySource {
 
 i {
   font-family: 'Sagona-BookItalic';
+  font-style: normal;
 }
 
 ::placeholder {

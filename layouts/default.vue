@@ -122,6 +122,7 @@ input {
   border: 2px solid #a7a8aa;
   border-radius: 4px;
   font-family: 'Sagona-BookItalic';
+  font-style: normal;
 }
 
 main {
@@ -139,6 +140,15 @@ pre {
   overflow: auto;
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-style: normal;
+}
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-style: normal;
 }
 
 .fader-enter-active,

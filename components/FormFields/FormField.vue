@@ -104,6 +104,7 @@ input[type='number'] {
   width: 100%;
   font-family: 'Sagona-BookItalic';
   font-size: 0.9em;
+  font-style: normal;
 }
 .form-up {
   border-color: red;
