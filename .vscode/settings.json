@@ -16,5 +16,8 @@
     "eslint.autoFixOnSave": true,
     "editor.formatOnSave": false,
     "vetur.validation.template": false,
-    "vetur.format.options.useTabs": true
+		"vetur.format.options.useTabs": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": true
+		}
 }

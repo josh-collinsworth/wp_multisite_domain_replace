@@ -8,8 +8,8 @@
           by
           <a href="https://joshcollinsworth.com/" target="_blank"
             >Josh Collinsworth</a
-          >, a developer at
-          <a href="https://getflywheel.com/" target="_blank">Flywheel</a>
+          >, when he was a developer at
+          <a href="https://getflywheel.com/" target="_blank">Flywheel</a> (RIP)
         </small>
       </p>
     </div>

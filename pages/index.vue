@@ -1,6 +1,13 @@
 <template>
   <transition name="fade-up" appear>
     <form @submit="submit">
+      <div class="warning">
+        <b>⚠️ WARNING: this domain will expire in June 2024</b>. This site will
+        remain online at the domain
+        <a href="https://wpmultisitedomainreplace.vercel.app/"
+          >wpmultisitedomainreplace.vercel.app</a
+        >. Please update any bookmarks or links to this site accordingly.
+      </div>
       <H1
         >Update a WordPress Multisite Network's Domain with a Single
         SQL&nbsp;Command
@@ -181,7 +188,7 @@ WHERE meta_value LIKE '%${this.oldDomain}%';`
 
 UPDATE ${this.dbPrefix}${i}_options
 SET option_value = REPLACE(option_value, '${this.oldDomain}', '${this.newDomain}')
-WHERE option_value LIKE '%${this.oldDomain}%' AND option_name = 'siteurl'; 
+WHERE option_value LIKE '%${this.oldDomain}%' AND option_name = 'siteurl';
 UPDATE ${this.dbPrefix}${i}_options
 SET option_value = REPLACE(option_value, '${this.oldDomain}', '${this.newDomain}')
 WHERE option_value LIKE '%${this.oldDomain}%' AND option_name = 'home';`
@@ -398,5 +405,22 @@ i {
 ::placeholder {
   color: #aaa;
   font-style: italic;
+}
+
+.warning {
+  background: red;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.warning a {
+  color: inherit;
+  font-family: inherit;
+  text-decoration-color: inherit;
+}
+
+.warning b {
+  color: inherit;
 }
 </style>
